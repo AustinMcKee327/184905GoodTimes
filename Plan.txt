@@ -1,0 +1,14 @@
+﻿March 27th, 8:56 PM
+Step 1: Add a Button, Label and TextBox to the .xaml
+Step 2: In the Button Click event (.cs), declare a temporary string variable
+Step 3: Take the Temporary Variable and use .TryParse to change the temporary variable into a string called Ottawa Time
+Step 4: Take Ottawa Time and declare all other time variables using Ottawa - time = correct zone
+Step 5: Take one of your Time Variables listed here(St. John's, Halifax, and Victoria) and create a new if statement where if 
+Time variable is greater than 2400 you take Time variable and subtract 2400
+Step 6: The if statement above works only on the timezones where it is ahead of Ottawa. You need three more if statements but 
+instead of -2400, +2400
+Step 7: If 60 minutes is input, it is an invalid time as you have 60 minutes which should convert to an hour. In order to fix this,
+create an if statement for each time variable where you use modulus 100, and if the remainder is greater than 59, it will subtract 60
+(the minutes that need to be converted) and add 100 (the correct output for an hour).
+now add the code to the label to output "The time in ___ is... " as well as outputing the variable.ToString, and a new line with 
+Environment.NewLine
